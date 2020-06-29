@@ -11,32 +11,11 @@ class HomePage1 extends StatefulWidget {
 
 class _HomePageState extends State<HomePage1> {
   List<MusicModel> listMusic = [
-    MusicModel(
-        id: "01",
-        title: "To Speak Of Solitude",
-        album: "Brambles",
-        duration: "4:21"),
-    MusicModel(
-        id: "02",
-        title: "Unsayable",
-        album: "Brambles",
-        duration: "2:52",
-        isPlay: true),
-    MusicModel(
-        id: "03",
-        title: "In The Androgynous Dark",
-        album: "Brambles",
-        duration: "4:43"),
-    MusicModel(
-        id: "04",
-        title: "Sait Photographs",
-        album: "Brambles",
-        duration: "6:54"),
-    MusicModel(
-        id: "05",
-        title: "Pink And Golden Billows",
-        album: "Brambles",
-        duration: "2:58"),
+    MusicModel(id: "01", title: "To Speak Of Solitude", duration: "4:21"),
+    MusicModel(id: "02", title: "Unsayable", duration: "2:52", isPlay: true),
+    MusicModel(id: "03", title: "In The Androgynous Dark", duration: "4:43"),
+    MusicModel(id: "04", title: "Sait Photographs", duration: "6:54"),
+    MusicModel(id: "05", title: "Pink And Golden Billows", duration: "2:58"),
   ];
 
   int indexPage = 0;

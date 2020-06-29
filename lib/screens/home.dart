@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:meditation/app/pages/home/home_page.dart';
+import 'package:meditation/app/pages/home/home_page2.dart';
+import 'package:meditation/app/pages/home/homepage3.dart';
+import 'package:meditation/app/pages/home/homepage4.dart';
 import 'package:meditation/components/game.dart';
 import 'package:meditation/utils/colors.dart';
 
@@ -23,14 +26,14 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 SizedBox(
-                  height: height * 0.035,
+                  height: height * 0.040,
                 ),
                 Text(
                   "Welcome User",
                   style: TextStyle(
-                    fontSize: 26,
+                    fontSize: 30,
                     color: Colors.black87,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w900,
                   ),
                 ),
                 SizedBox(
@@ -85,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => HomePage1()),
+                                builder: (context) => HomePage2()),
                           );
                         },
                         child: RecommendedGame(
@@ -105,7 +108,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => HomePage1()),
+                                builder: (context) => HomePage3()),
                           );
                         },
                         child: RecommendedGame(
@@ -125,7 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => HomePage1()),
+                                builder: (context) => HomePage4()),
                           );
                         },
                         child: RecommendedGame(

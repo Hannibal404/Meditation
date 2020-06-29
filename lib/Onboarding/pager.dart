@@ -32,13 +32,13 @@ class _OnboardingPagerTypeThreeState extends State<OnboardingPagerTypeThree> {
       data: OnboardData(
           placeHolder: "assets/images/onboarding_image_two.svg",
           title: Strings.contra_wireframe_kit,
-          description: Strings.contra_wireframe_kit_page_text),
+          description: Strings.contra_wireframe_kit_page_text1),
     ),
     OnboardPageTypeThree(
       data: OnboardData(
           placeHolder: "assets/images/onboarding_image_three.svg",
           title: Strings.contra_wireframe_kit,
-          description: Strings.contra_wireframe_kit_page_text),
+          description: Strings.contra_wireframe_kit_page_text2),
     ),
   ];
 
