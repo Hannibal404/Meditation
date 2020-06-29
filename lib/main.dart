@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meditation/Onboarding/onboard_page.dart';
 import 'package:meditation/Onboarding/pager.dart';
+import 'package:meditation/app/pages/home/home_page.dart';
 import 'package:meditation/utils/colors.dart';
 import 'package:meditation/screens/home.dart';
 
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/onboard_type_three': (context) => OnboardingPagerTypeThree(),
         "/home_screen": (context) => HomeScreen(),
+        "/music_screen": (context) => HomePage1(),
       },
     );
   }

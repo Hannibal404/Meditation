@@ -21,6 +21,13 @@ dependencies:
   fl_chart: ^0.10.0
   google_maps_flutter: ^0.5.28+1
   flutter_swiper: ^1.1.6
+  flutter_xlider: ^3.1.1
+  font_awesome_flutter: ^8.7.0
+  feather_icons_flutter: ^4.7.4
+  flutter_feather_icons: ^1.0.3
+  audioplayer: ^0.8.1
+  path_provider: ^1.6.11
+
 
 
 

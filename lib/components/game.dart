@@ -31,7 +31,7 @@ class RecommendedGame extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           Align(
-            alignment: Alignment.bottomCenter,
+            alignment: Alignment.bottomLeft,
             child: ClipPath(
               clipper: MyClipper(),
               child: Container(
@@ -44,8 +44,8 @@ class RecommendedGame extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 125,
-            top: 150,
+            left: 10,
+            top: 147,
             child: Text(
               name,
               style: TextStyle(
@@ -54,8 +54,8 @@ class RecommendedGame extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 125,
-            top: 170,
+            left: 10,
+            top: 165,
             child: Container(
               width: 110,
               child: Row(
@@ -84,7 +84,7 @@ class RecommendedGame extends StatelessWidget {
           ),
           Positioned(
             top: 110,
-            left: 125,
+            left: 10,
             child: Container(
               height: 30,
               width: 30,
@@ -100,7 +100,7 @@ class RecommendedGame extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: left,
+            left: 40,
             bottom: bottom,
             child: Image(
               height: height,
