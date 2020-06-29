@@ -1,16 +1,9 @@
-# meditation
+#  Meditation App
 
-A new Flutter project.
+This project created as a part of #Hack20 - Online International Flutter Hackathon 2020
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This app is specially made to provide highly soothing experience to users. In this tough times, We feel this can help users to rejuvenate.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ScreenShots
