@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:meditation/components/game.dart';
@@ -11,6 +13,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: ListView(
         children: <Widget>[
@@ -29,14 +32,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
                 SizedBox(
-                  height: 20,
+                  height: height * 0.024,
                 ),
                 Row(
                   children: <Widget>[
                     Expanded(
                       child: Container(
                         padding: EdgeInsets.only(left: 25.0, right: 15.0),
-                        height: 50,
+                        height: height * 0.06,
                         width: double.infinity,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
@@ -52,8 +55,8 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ),
                             Image(
-                              height: 20,
-                              width: 20,
+                              height: height * 0.024,
+                              width: height * 0.024,
                               image: AssetImage('images/magnifying-glass.png'),
                             )
                           ],
@@ -64,8 +67,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: 15,
                     ),
                     Container(
-                      height: 50,
-                      width: 50,
+                      height: height * 0.06,
+                      width: height * 0.06,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5),
                         color: Colors.grey[200],
@@ -79,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
                 SizedBox(
-                  height: 30,
+                  height: height * 0.036,
                 ),
                 Text(
                   'Recommended Sounds',
@@ -90,10 +93,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 15.0,
+                  height: height * 0.018,
                 ),
                 Container(
-                  height: 500,
+                  height: height * 0.73,
                   width: double.infinity,
                   child: ListView(
                     scrollDirection: Axis.vertical,
