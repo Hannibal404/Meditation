@@ -34,52 +34,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 SizedBox(
                   height: height * 0.024,
                 ),
-                Row(
-                  children: <Widget>[
-                    Expanded(
-                      child: Container(
-                        padding: EdgeInsets.only(left: 25.0, right: 15.0),
-                        height: height * 0.06,
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          color: Colors.grey[200],
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
-                            Text(
-                              'Search Sounds...',
-                              style: TextStyle(
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                            Image(
-                              height: height * 0.024,
-                              width: height * 0.024,
-                              image: AssetImage('images/magnifying-glass.png'),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 15,
-                    ),
-                    Container(
-                      height: height * 0.06,
-                      width: height * 0.06,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(5),
-                        color: Colors.grey[200],
-                      ),
-                      child: Icon(
-                        Icons.filter_list,
-                        color: Colors.black87,
-                        size: 25,
-                      ),
-                    ),
-                  ],
+                Text(
+                  "Welcome User",
+                  style: TextStyle(
+                    fontSize: 26,
+                    color: Colors.black87,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
                 SizedBox(
                   height: height * 0.036,
@@ -96,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: height * 0.018,
                 ),
                 Container(
-                  height: height * 0.73,
+                  height: height * 0.74,
                   width: double.infinity,
                   child: ListView(
                     scrollDirection: Axis.vertical,
