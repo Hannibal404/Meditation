@@ -68,7 +68,7 @@ class RecommendedGame extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'Plays',
+                    'Play',
                     style: TextStyle(
                       color: Colors.white,
                     ),
@@ -90,11 +90,11 @@ class RecommendedGame extends StatelessWidget {
               width: 30,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
-                color: Colors.blueAccent,
+                color: Colors.white,
               ),
               child: Icon(
                 Icons.play_arrow,
-                color: Colors.white,
+                color: Colors.black,
                 size: 17,
               ),
             ),

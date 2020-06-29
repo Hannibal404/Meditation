@@ -78,11 +78,13 @@ class _LibraryTabState extends State<LibraryTab4> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Text('Rain Sounds'),
         brightness: Brightness.light,
         leading: IconButton(
             icon: Icon(FeatherIcons.chevronLeft),
             onPressed: () {
-              Navigator.pushNamed(context, "/onboard_type_three");
+              Navigator.pushNamed(context, "/home_screen");
             }),
       ),
       body: Padding(
@@ -100,13 +102,7 @@ class _LibraryTabState extends State<LibraryTab4> {
                             decoration: BoxDecoration(
                                 gradient: item.isPlay
                                     ? LinearGradient(colors: [
-                                        Theme.of(context)
-                                            .scaffoldBackgroundColor,
-                                        Colors.grey[200],
-                                        Theme.of(context)
-                                            .scaffoldBackgroundColor,
-                                        Theme.of(context)
-                                            .scaffoldBackgroundColor,
+                                        Colors.black,
                                       ])
                                     : null),
                             child: ListTile(
@@ -115,16 +111,19 @@ class _LibraryTabState extends State<LibraryTab4> {
                                       color: Theme.of(context).primaryColor)
                                   : Text(item.id,
                                       style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color:
-                                              Theme.of(context).primaryColor)),
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.black,
+                                      )),
                               title: Text(item.title,
                                   style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Theme.of(context).primaryColor)),
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                  )),
                               trailing: IconButton(
-                                  icon: Icon(FontAwesomeIcons.solidPauseCircle,
-                                      color: Colors.grey),
+                                  icon: Icon(
+                                    FontAwesomeIcons.solidPauseCircle,
+                                    color: Colors.black,
+                                  ),
                                   onPressed: play1),
                             ),
                           ))

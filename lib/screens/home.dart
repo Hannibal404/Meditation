@@ -18,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
     double height = MediaQuery.of(context).size.height;
 
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       body: Column(
         children: <Widget>[
           Padding(
@@ -29,9 +30,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: height * 0.040,
                 ),
                 Text(
-                  "Welcome User",
+                  "Welcome User!",
                   style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 36,
                     color: Colors.black87,
                     fontWeight: FontWeight.w900,
                   ),
@@ -51,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 15.0,
                 ),
                 Container(
-                  height: height * 0.79,
+                  height: height * 0.75,
                   width: double.infinity,
                   child: GridView(
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -73,8 +74,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         },
                         child: RecommendedGame(
                           name: 'City',
-                          views: '45,967',
-                          color: overWatchBg,
+                          views: 'Tap to',
+                          color: Colors.black,
                           imagePath: 'images/overwatch4.png',
                           height: 150,
                           left: 150,
@@ -93,8 +94,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         },
                         child: RecommendedGame(
                           name: 'Meditation',
-                          views: '31,632',
-                          color: apexLegendBg,
+                          views: 'Tap to',
+                          color: Colors.black,
                           imagePath: 'images/al2.png',
                           height: 115,
                           left: 153,
@@ -113,8 +114,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         },
                         child: RecommendedGame(
                           name: 'Forest',
-                          views: '13,933',
-                          color: cyberSpaceBg,
+                          views: 'Tap to',
+                          color: Colors.black,
                           imagePath: 'images/overwatch2.png',
                           height: 115,
                           left: 153,
@@ -133,8 +134,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         },
                         child: RecommendedGame(
                           name: 'Rain',
-                          views: '4,003',
-                          color: Colors.blue[600],
+                          views: 'Tap to',
+                          color: Colors.black,
                           imagePath: 'images/al3.png',
                           height: 115,
                           left: 153,
