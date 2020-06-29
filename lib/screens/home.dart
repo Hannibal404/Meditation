@@ -15,24 +15,15 @@ class _HomeScreenState extends State<HomeScreen> {
     double height = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      body: ListView(
+      body: Column(
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 20.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Icon(
-                      Icons.menu,
-                      size: 25,
-                    ),
-                  ],
-                ),
                 SizedBox(
-                  height: height * 0.024,
+                  height: height * 0.035,
                 ),
                 Text(
                   "Welcome User",
@@ -57,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 15.0,
                 ),
                 Container(
-                  height: height * 0.75,
+                  height: height * 0.79,
                   width: double.infinity,
                   child: GridView(
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
